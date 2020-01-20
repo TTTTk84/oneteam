@@ -1,14 +1,8 @@
 //王将の処理
 
-window.onload = () => {
-  main();
-};
-
-//main処理
-const main = () => {
-  const waitTime = 10000;
-  console.log(`${waitTime}ミリ秒カウントダウン`);
-  setTimeout(() => kingControl(), waitTime);
+//kingmain処理
+const kingmain = () => {
+  kingControl();
 };
 
 //加速度センサーを感知するまで、王将を回す。
