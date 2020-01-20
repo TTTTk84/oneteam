@@ -27,9 +27,10 @@ const loop = motor => {
     console.log(`${second}ループ`);
     second++;
 
-    /*
-      10秒以内にゴミ箱に捨てた場合の処理。
-    */
+    if (garbagebox()) {
+      motor.stop();
+      return;
+    }
 
     if (second > 10) {
       motor.stop();
