@@ -27,6 +27,8 @@ const loop = motor => {
     console.log(`${second}ループ`);
     second++;
 
+    console.log(garbagebox());
+
     if (garbagebox()) {
       motor.stop();
       return;

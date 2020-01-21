@@ -1,21 +1,17 @@
 //ゴミ箱の処理
 
 const garbagebox = () => {
-  const obniz = new Obniz("7904-8026");
-  obniz.onconnect = async function() {
-    const sensor = obniz.wired("KXR94-2050", {
-      vcc: 0,
-      gnd: 1,
-      x: 2,
-      y: 3,
-      z: 4,
-      enable: 5,
-      self_test: 6
-    });
+  const obnizB = new Obniz("1690-3518");
+  obnizB.onconnect = async function() {
+    console.log("garbagebox接続");
+    const sensor = obniz.wired("GP2Y0A21YK0F", { vcc: 0, gnd: 1, signal: 2 });
 
-    sensor.onChange = () => {
-      return true;
-    };
-    return false;
+    sensor.start(function(distance) {
+      if (distance < 200) {
+        return true;
+      }
+    });
   };
+
+  return false;
 };
