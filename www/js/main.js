@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
   let currentTime = getCurrentTime();
 
   /* takeMedicineTime, 設定された時刻でhhmmの形式, ユーザから設定される予定　24時で生書き*/
-  let takeMedicineTime1 = 0944;
+  let takeMedicineTime1 = 1105;
 
   let countdownTime = getCountdownTime(currentTime, takeMedicineTime1);
   countdownTime = convertTimeToMillisec(countdownTime);
