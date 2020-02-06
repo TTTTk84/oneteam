@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/collection.css" />
+
+    <title>コレクション画面</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="wood_box" class="wood-container"></div>
+    </div>
+    <footer>
+      <div class="footer1"><a href="">木</a></div>
+      <div class="footer2"><a href="">家</a></div>
+      <div class="footer3"><a href="">コレクション</a></div>
+      <div class="footer4"><a href="">予定</a></div>
+      <div class="footer5"><a href="">設定</a></div>
+    </footer>
+  </body>
+  <script>
+    const img = [
+      "image/wood_test.png",
+      "image/wood_test2.png",
+      "image/wood_test3.png",
+      "image/wood_test4.png",
+      "image/wood_test5.png"
+    ];
+    const count_max = img.length;
+    let wood_box = document.getElementById("wood_box");
+
+    const make_wood = (img, count) => {
+      const wood = document.createElement("div");
+      wood.href = "";
+      wood.id = `wood${count}`;
+      wood.className = `wood `;
+      wood.style = `background-image: url(${img})`;
+      return wood;
+    };
+
+    for (let i = 0; i < count_max; i++) {
+      const wood = make_wood(img[i], i + 1);
+      wood_box.appendChild(wood);
+    }
+  </script>
+</html>
