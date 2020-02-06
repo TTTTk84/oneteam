@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+main{
+    height: 90vh;
+    background-image: url("../image/wallpaper.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top{
+    height: 10vh;
+    margin: 7%;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#message{
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    height: 20vh;
+    margin: 7%;
+    padding: 5%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    letter-spacing: 0.2em;
+    text-indent: 1em;
+
+    border: white 5px solid;
+    border-radius: 10% 10% 10% 10%;
+}
+
+footer{
+    background-color: black;
+    height: 10vh;
+}
+
+#tree img{
+  height: 42vh;
+}
