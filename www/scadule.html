@@ -2,47 +2,96 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/common.css">
-  <script src="https://kit.fontawesome.com/1440b05c82.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/common.css">
+	<script src="https://kit.fontawesome.com/1440b05c82.js" crossorigin="anonymous"></script>
+	<link href='packages/core/main.css' rel='stylesheet' />
+	<link href='packages/daygrid/main.css' rel='stylesheet' />
+	<link href='packages/timegrid/main.css' rel='stylesheet' />
+	<link href='packages/list/main.css' rel='stylesheet' />
+	<script src='packages/core/main.js'></script>
+	<script src='packages/interaction/main.js'></script>
+	<script src='packages/daygrid/main.js'></script>
+	<script src='packages/timegrid/main.js'></script>
+	<script src='packages/list/main.js'></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var calendarEl = document.getElementById('calendar');
+
+			var calendar = new FullCalendar.Calendar(calendarEl, {
+				plugins: ['interaction', 'dayGrid'],
+				header: {
+					left: 'prev,next today',
+					center: 'title',
+					right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+				},
+				locale: 'ja',
+				navLinks: true, // can click day/week names to navigate views
+				businessHours: true, // display business hours
+				editable: true,
+				events: []
+			});
+
+			calendar.render();
+
+			let daybody = document.getElementsByClassName('fc-scroller')[0];
+			daybody.style.height = '272.5px';
+			daybody.style.overflow = 'visible';
+		});
+	</script>
+	<style>
+		main #calendar {
+			padding: 7.5vh 3vw;
+			font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+			font-size: 14px;
+		}
+
+		#calendar {
+			max-width: 900px;
+			margin: 0 auto;
+		}
+	</style>
 </head>
 
 <body>
-  <footer>
-    <div class="footer-content">
-      <a href="home.html">
-        <i class="fas fa-home"></i>
-        <span class="footer-name">ホーム</span>
-      </a>
-    </div>
-    <div class="footer-content">
-      <a href="index.html">
-        <i class="fa fa-tree"></i>
-        <span class="footer-name">木</span>
-      </a>
-    </div>
-    <div class="footer-content">
-      <a href="collection.html">
-        <i class="fa fa-book"></i>
-        <span class="footer-name">図鑑</span>
-      </a>
-    </div>
-    <div class="footer-content">
-      <a href="scadule.html">
-        <i class="fa fa-clock-o"></i>
-        <span class="footer-name">予定</span>
-      </a>
-    </div>
-    <div class="footer-content">
-      <a href="edit.html">
-        <i class="fa fa-cog"></i>
-        <span class="footer-name">設定</span>
-      </a>
-    </div>
-  </footer>
+	<main>
+		<div id='calendar'></div>
+	</main>
+	<footer>
+		<div class="footer-content">
+			<a href="home.html">
+				<i class="fas fa-home"></i>
+				<span class="footer-name">ホーム</span>
+			</a>
+		</div>
+		<div class="footer-content">
+			<a href="index.html">
+				<i class="fa fa-tree"></i>
+				<span class="footer-name">木</span>
+			</a>
+		</div>
+		<div class="footer-content">
+			<a href="collection.html">
+				<i class="fa fa-book"></i>
+				<span class="footer-name">図鑑</span>
+			</a>
+		</div>
+		<div class="footer-content">
+			<a href="scadule.html">
+				<i class="fa fa-clock-o"></i>
+				<span class="footer-name">予定</span>
+			</a>
+		</div>
+		<div class="footer-content">
+			<a href="edit.html">
+				<i class="fa fa-cog"></i>
+				<span class="footer-name">設定</span>
+			</a>
+		</div>
+	</footer>
 </body>
 
 </html>
