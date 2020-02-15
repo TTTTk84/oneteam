@@ -1,0 +1,42 @@
+main {
+  display: flex;
+  flex-direction: column;
+  background: #e3f1fc;
+  height: 85vh;
+}
+
+main > {
+  margin: 5vh 0 0 0;
+}
+
+form {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+
+form p {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+input {
+  margin-bottom: 3em;
+}
+
+input:nth-of-type(1) {
+  width: 80%;
+}
+
+input:nth-of-type(3) {
+  background-color: blue;
+  color: white;
+  padding: 0.5em 0;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  bottom: -6em;
+  border-style: none;
+  border-radius: 3px;
+}
