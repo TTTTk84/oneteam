@@ -18,13 +18,19 @@
       <div>設定</div>
     </header>
     <main>
-      <form action="" method="post">
+      <div class="form" id="form">
         <p>メールアドレス</p>
-        <input type="text" class="input" placeholder="hoge@example.com" />
+        <input
+          type="text"
+          name="mail"
+          class="input"
+          placeholder="hoge@example.com"
+        />
         <p>音声</p>
         <input type="file" class="input" /><br />
-        <input type="submit" class="input" value="送信" />
-      </form>
+        <input type="hidden" name="user_id" value="1" />
+        <input type="button" class="input" value="送信" id="submit" />
+      </div>
     </main>
     <footer>
       <div class="footer-content">
@@ -58,5 +64,11 @@
         </a>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/edit.js"></script>
   </body>
 </html>
