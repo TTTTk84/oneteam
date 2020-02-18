@@ -1,7 +1,13 @@
+.wrap {
+  width: 100%;
+  height: 100vh;
+}
+
 .container {
   position: relative;
   width: 80%;
   height: 100vh;
+  z-index: 0;
   margin: 0 auto;
 }
 
@@ -26,4 +32,41 @@
   height: 30%;
   background-position: center;
   background-size: cover;
+}
+
+.wood_info {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 2em;
+  background-color: white;
+  border: 2px #ffd400 solid;
+  border-radius: 3px;
+  z-index: 10;
+  width: 70%;
+  height: 70%;
+  display: none;
+}
+
+.wood_title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.wood_img {
+  width: 60%;
+  height: 50%;
+  margin: 2em auto;
+  background-color: red;
+}
+
+.wood_content {
+  width: 100%;
+  height: 5em;
+  padding: 0.5em;
+  border-top: 2px #ffd400 solid;
+  border-bottom: 2px #ffd400 solid;
 }
