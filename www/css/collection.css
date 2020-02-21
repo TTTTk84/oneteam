@@ -34,6 +34,13 @@
   background-size: cover;
 }
 
+.question {
+  width: 30%;
+  height: 30%;
+  background-position: center;
+  background-size: cover;
+}
+
 .wood_info {
   position: fixed;
   top: 0;
