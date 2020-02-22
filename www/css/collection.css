@@ -30,15 +30,17 @@
 .wood {
   width: 30%;
   height: 30%;
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .question {
   width: 30%;
   height: 30%;
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .wood_info {
@@ -48,9 +50,7 @@
   left: 0;
   right: 0;
   margin: auto;
-  padding: 2em;
-  background-color: white;
-  border: 2px #ffd400 solid;
+  background-color: #e6ffe9;
   border-radius: 3px;
   z-index: 10;
   width: 70%;
@@ -58,21 +58,30 @@
   display: none;
 }
 
+.wood_img {
+  width: 50%;
+  height: 40%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.wood_block {
+  height: 50%;
+  margin: 2em 0.5em;
+  border-radius: 5px;
+  padding: 1em;
+  background-color: #f0fff0;
+}
+
 .wood_title {
   text-align: center;
   font-size: 2em;
 }
-
-.wood_img {
-  width: 60%;
-  height: 50%;
-  margin: 2em auto;
-  background-color: red;
-}
-
 .wood_content {
   width: 100%;
-  height: 5em;
+  height: 8em;
   padding: 0.5em;
   border-top: 2px #ffd400 solid;
   border-bottom: 2px #ffd400 solid;
