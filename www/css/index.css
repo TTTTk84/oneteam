@@ -1,14 +1,13 @@
-main {
+main{
     height: 94vh;
-    background-image: url("../image/wallpaper.jpg");
-    background-size: cover;
+    background-image: url("../image/index/wallpaper.png");
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-#top {
+#top{
     height: 10vh;
     margin: 7%;
     font-size: 3em;
@@ -17,8 +16,9 @@ main {
     align-items: center;
 }
 
-#message {
-    background-color: rgba(0, 0, 0, 0.7);
+#message{
+    background-image: url("../image/index/textbox.png") ;
+    background-size: cover;
     color: white;
     height: 20vh;
     margin: 7%;
@@ -27,10 +27,8 @@ main {
     line-height: 1.5em;
     letter-spacing: 0.2em;
     text-indent: 1em;
-    border: white 5px solid;
-    border-radius: 10% 10% 10% 10%;
 }
 
-#tree img {
-    height: 42vh;
+#tree img{
+  height: 42vh;
 }

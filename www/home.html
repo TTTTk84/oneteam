@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/home.css">
 	<script src="https://kit.fontawesome.com/1440b05c82.js" crossorigin="anonymous"></script>
+	<script src="js/home.js"></script>
 </head>
 
 <body>
@@ -19,29 +20,45 @@
 	<main>
 		<table id="dayBox">
 			<tr>
-				<th>日</th>
-				<th>月</th>
-				<th>火</th>
-				<th>水</th>
-				<th>木</th>
-				<th>金</th>
-				<th>土</th>
+				<th class="day0">日</th>
+				<th class="day1">月</th>
+				<th class="day2">火</th>
+				<th class="day3">水</th>
+				<th class="day4">木</th>
+				<th class="day5">金</th>
+				<th class="day6">土</th>
 			</tr>
 			<tr>
-				<td>00日</td>
-				<td>00日</td>
-				<td>00日</td>
-				<td>00日</td>
-				<td>00日</td>
-				<td>00日</td>
-				<td>00日</td>
+				<td class="day0">
+					<div class="day0 day">00日</div><img src="image/home/star.png" class="day0" width="37.5" height="37.5">
+				</td>
+				<td class="day1">
+					<div class="day1 day">00日</div><img src="image/home/star.png" class="day1" width="37.5" height="37.5">
+				</td>
+				<td class="day2">
+					<div class="day2 day">00日</div><img src="image/home/star.png" class="day2" width="37.5" height="37.5">
+				</td>
+				<td class="day3">
+					<div class="day3 day">00日</div><img src="image/home/star.png" class="day3" width="37.5" height="37.5">
+				</td>
+				<td class="day4">
+					<div class="day4 day">00日</div><img src="image/home/star.png" class="day4" width="37.5" height="37.5">
+				</td>
+				<td class="day5">
+					<div class="day5 day">00日</div><img src="image/home/star.png" class="day5" width="37.5" height="37.5">
+				</td>
+				<td class="day6">
+					<div class="day6 day">00日</div><img src="image/home/star.png" class="day6" width="37.5" height="37.5">
+				</td>
 			</tr>
 		</table>
-        <hr>
+		<hr>
 		<div id="messageBox">
-            <ul>
-                <li>日付を選択してください</li>
-            </ul>
+			<ul>
+				<div id="date">日付を選択してください</div>
+			</ul>
+			<div id="total">
+			</div>
 		</div>
 	</main>
 
