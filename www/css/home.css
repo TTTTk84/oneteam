@@ -1,0 +1,90 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #E3F1FC;
+    height: 85vh;
+}
+
+main > {
+    margin: 5vh 0 0 0;
+}
+
+#dayBox {
+    height: 15vh;
+    width: 84vw;
+    border-radius: 25px 25px 25px 25px;
+    border-collapse: collapse;
+    background: #f0f0f0;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+th{
+    height: 5vh;
+    width: 12vw;
+}
+
+td { 
+    height: 10vh;
+    width: 12vw;
+    padding: 5px;
+    vertical-align: top;
+    text-align: center;
+}
+
+th, td{
+    border: solid #888888 1px;
+    border-top: none;
+    border-bottom: none;
+}
+
+th:last-child, td:last-child, th:first-child, td:first-child{
+    border: none;
+}
+
+th:last-child{
+    color: blue;
+    border-radius: 0 25px 0 0;
+}
+
+th:first-child{
+    color: red;
+    border-radius: 25px 0 0 0;
+}
+
+td:last-child{
+    color: blue;
+    border-radius: 0 0 25px 0;
+}
+
+td:first-child{
+    color: red;
+    border-radius: 0 0 0 25px;
+}
+
+hr {
+    width: 90vw;
+}
+
+#messageBox {
+    position: relative;
+    height: 50vh;
+    width: 84vw;
+    padding: 20px;
+}
+
+#total{
+    position: absolute;
+    bottom : 0px;
+    right: 0px;
+    font-size: 2em;
+}
+
+#messageBox > ul > li{
+    font-size: 2.5em;
+}
+
+#date{
+    font-size: 1.6em;
+}
