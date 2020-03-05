@@ -18,7 +18,7 @@ main{
 
 #message{
     background-image: url("../image/index/textbox.png") ;
-    background-size: cover;
+    background-size: 100% 100%;
     color: white;
     height: 20vh;
     margin: 7%;
