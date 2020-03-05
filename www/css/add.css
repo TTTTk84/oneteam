@@ -56,3 +56,8 @@ main {
 #add {
     background: #ffcccc;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
