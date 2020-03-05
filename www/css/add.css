@@ -1,0 +1,58 @@
+main {
+    position: relative;
+    height: 91vh;
+    background-color: #E3F1FC;
+}
+
+#table {
+    position: absolute;
+    top: 5vh;
+    width: 100vw;
+}
+
+.tr {
+    /* margin : 5vh 0; */
+    font-size: 2em;
+}
+
+.th {
+    background: white;
+    height: 7vh;
+}
+
+.td {
+    height: 15vh;
+    font-size: 0.8em;
+    margin-left: 10vw;
+}
+
+.th, .td {
+    display: flex;
+    align-items: center;
+}
+
+#button-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5vh;
+    font-size: 2em;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 25vw;
+    border: solid #888888 1px;
+    text-align: center;
+}
+
+#back {
+    background: #ccccff;
+}
+
+#add {
+    background: #ffcccc;
+}
