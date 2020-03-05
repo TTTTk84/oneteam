@@ -1,0 +1,29 @@
+main {
+    position: relative;
+    background-color: #E3F1FC;
+    height : 85vh;
+}
+
+table {
+    background-color: white;
+}
+
+#add {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vh;
+    background-color: rgb(255, 182, 98);
+    font-size: 2em;
+    height: 100px;
+    width: 100px;
+    border-radius: 1000px 1000px 1000px 1000px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#add p {
+    margin-left: 15px;
+}
