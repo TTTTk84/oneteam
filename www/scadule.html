@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/scadule.css">
 	<script src="https://kit.fontawesome.com/1440b05c82.js" crossorigin="anonymous"></script>
 	<link href='packages/core/main.css' rel='stylesheet' />
 	<link href='packages/daygrid/main.css' rel='stylesheet' />
@@ -32,10 +33,24 @@
 				navLinks: true, // can click day/week names to navigate views
 				businessHours: true, // display business hours
 				editable: true,
-				events: []
+				events: [
+					{
+						title: 'kusuri-A',
+						start: '2020-03-03T13:00:00',
+						constraint: 'businessHours'
+					},
+					{
+						title: 'kusuri-B',
+						start: '2020-03-03T18:00:00',
+					}
+				]
 			});
 
 			calendar.render();
+
+			document.getElementById('add').addEventListener('click', () => {
+				window.location.href = 'add.html';
+			});
 
 		});
 	</script>
@@ -54,8 +69,12 @@
 </head>
 
 <body>
+    <header>
+        <div>服薬カレンダー</div>
+    </header>
 	<main>
 		<div id='calendar'></div>
+		<div id="add"><p>予定追加</p></div>
 	</main>
 	<footer>
 		<div class="footer-content">
