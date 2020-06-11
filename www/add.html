@@ -9,6 +9,10 @@
         content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <link rel="stylesheet" href="components/loader.css">
     <script src="components/loader.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1440b05c82.js"
+      crossorigin="anonymous"
+    ></script>
     <link href="css/common.css" rel="stylesheet">
     <link href="css/add.css" rel="stylesheet">
 </head>
@@ -18,35 +22,54 @@
         <div>予定を追加する</div>
     </header>
     <main>
-        <div id="table">
-            <div class="tr">
-                <div class="th">
-                    <p>・薬を飲む日</p>
-                </div>
-                <div class="td">
-                    <p>----年--月--日&nbsp▼</p>
-                </div>
-            </div>
-
-            <div class="tr">
-                <div class="th">
-                    <p> ・薬を飲む時間</p>
-                </div>
-                <div class="td">
-                    <p>--時--分&nbsp▼</p>
-                </div>
-            </div>
-            <div id="button-box">
-                <a href="scadule.html">
-                    <div id="back" class="button">戻る</div>
-                </a>
-                <a href="scadule.html">
-                    <div id="add" class="button">追加</div>
-                </a>
-            </div>
+        <p>日付</p>
+        <input type="date" value="MM-DD">
+        <p>時間</p>
+        <input type="time" value="hh:mm">
+        <p>繰り返し</p>
+        <select name="roop">
+            <option value="not">繰り返さない</option>
+            <option value="week">毎週</option>
+            <option value="month">毎月</option>
+        </select>
+        <div id="button-box">
+            <!-- <input type="button" value="戻る" id="back" class="button"> -->
+            <input type="button" value="追加" id="add" class="button">
         </div>
-
     </main>
+
+    <footer>
+    <div class="footer-content">
+      <a href="home.html">
+        <i class="fas fa-home"></i>
+        <span class="footer-name">ホーム</span>
+      </a>
+    </div>
+    <div class="footer-content">
+      <a href="index.html">
+        <i class="fa fa-tree"></i>
+        <span class="footer-name">木</span>
+      </a>
+    </div>
+    <div class="footer-content">
+      <a href="collection.html">
+        <i class="fa fa-book"></i>
+        <span class="footer-name">図鑑</span>
+      </a>
+    </div>
+    <div class="footer-content">
+      <a href="scadule.html">
+        <i class="fa fa-clock-o"></i>
+        <span class="footer-name">予定</span>
+      </a>
+    </div>
+    <div class="footer-content">
+      <a href="edit.html">
+        <i class="fa fa-cog"></i>
+        <span class="footer-name">設定</span>
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>
