@@ -5,86 +5,43 @@ main {
     justify-content: space-evenly;
     background: #E3F1FC;
     height: 85vh;
+}main {
+    background: #ffffff;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-main > {
-    margin: 5vh 0 0 0;
+table {
+    border-collapse: collapse; 
+    width: 70vw;
+    margin-top: 5vh;
 }
 
-#dayBox {
-    height: 15vh;
-    width: 84vw;
-    border-radius: 25px 25px 25px 25px;
-    border-collapse: collapse;
-    background: #f0f0f0;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
+thead {
+    margin: 5vh 0;
+    width: 70vw;
+    background: #E3F1FC;
 }
 
-th{
-    height: 5vh;
-    width: 12vw;
+tr {
+    border-bottom: solid black 1px;
 }
 
-td { 
-    height: 10vh;
-    width: 12vw;
-    padding: 5px;
-    vertical-align: top;
-    text-align: center;
+td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-th, td{
-    border: solid #888888 1px;
-    border-top: none;
-    border-bottom: none;
+th, td {
+    font-size: 24px;
+    padding: 1vh 0;
+    vertical-align: super;
+    font-weight: normal;
 }
 
-th:last-child, td:last-child, th:first-child, td:first-child{
-    border: none;
-}
-
-th:last-child{
-    color: blue;
-    border-radius: 0 25px 0 0;
-}
-
-th:first-child{
-    color: red;
-    border-radius: 25px 0 0 0;
-}
-
-td:last-child{
-    color: blue;
-    border-radius: 0 0 25px 0;
-}
-
-td:first-child{
-    color: red;
-    border-radius: 0 0 0 25px;
-}
-
-hr {
-    width: 90vw;
-}
-
-#messageBox {
-    position: relative;
-    height: 50vh;
-    width: 84vw;
-    padding: 20px;
-}
-
-#total{
-    position: absolute;
-    bottom : 0px;
-    right: 0px;
-    font-size: 2em;
-}
-
-#messageBox > ul > li{
-    font-size: 2.5em;
-}
-
-#date{
-    font-size: 1.6em;
+.day{
+    font-size: 12px;
 }
